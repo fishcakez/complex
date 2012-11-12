@@ -284,7 +284,7 @@ atan(#complex{real=Real,imag=Imag}) ->
 	Imag2 = 0.25 * math:log(C / D),
 	#complex{real=Real2,imag=Imag2};
 atan(Real) ->
-	math:atan2(Real).
+	math:atan(Real).
 
 -spec atan2(complex(), complex()) -> complex();
 		(complex(), number()) -> complex();
