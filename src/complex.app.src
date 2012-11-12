@@ -1,0 +1,12 @@
+{application, complex,
+	[
+ 		{description, "Complex number library"},
+ 		{vsn, "0.1.0"},
+		{registered, []},
+		{applications, [
+				kernel,
+				stdlib
+		]},
+		{mod, {complex_app, []}},
+		{env, []}
+]}.
