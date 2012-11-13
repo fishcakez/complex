@@ -404,7 +404,7 @@ log10(Real) ->
 -spec pow(complex(), complex()) -> complex();
 		(complex(), number()) -> complex();
 		(number(), complex()) -> complex();
-		(number(), number()) -> number().
+		(number(), number()) -> float().
 pow(ComplexA = #complex{}, NumberB) ->
 	{R, Theta} = to_polar(ComplexA),
 	R2 = pow(R, NumberB),
