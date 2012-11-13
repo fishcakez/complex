@@ -292,7 +292,7 @@ atan(Real) ->
 		(number(), number()) -> float().
 atan2(RealA, RealB)
 		when not ?IS_COMPLEX(RealA) andalso not ?IS_COMPLEX(RealB) ->
-	atan2(RealA, RealB);
+	math:atan2(RealA, RealB);
 atan2(NumberA, NumberB) ->
 	NumberASquared = '*'(NumberA, NumberA),
 	NumberBSquared = '*'(NumberB, NumberB),
